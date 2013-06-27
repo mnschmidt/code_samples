@@ -1,0 +1,153 @@
+<html>
+<head>
+  <title>Mayo: <%= controller.controller_name %>/<%= controller.action_name %> (logged in as <%= @login %>)</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <style type="text/css" media="screen">
+  body {
+  	margin : 10px;
+  	font: Verdana, Helvetica, Arial;
+  	padding: 0px;
+  	background: #fff;
+  }
+
+  #menu {
+  	border-bottom : 1px solid #ccc;
+  	margin : 0;
+  	padding-bottom : 19px;
+  	padding-left : 10px;
+  }
+
+  #menu ul, #menu li	{
+  	display : inline;
+  	list-style-type : none;
+  	margin : 0;
+  	padding : 0;
+  }
+
+
+  #menu a:link, #menu a:visited	{
+  	background : #E8EBF0;
+  	border : 1px solid #ccc;
+  	color : #666;
+  	float : left;
+  	font-size : small;
+  	font-weight : normal;
+  	line-height : 14px;
+  	margin-right : 8px;
+  	padding : 2px 10px 2px 10px;
+  	text-decoration : none;
+  }
+
+  #menu a:link.active, #menu a:visited.active	{
+  	background : #fff;
+  	border-bottom : 1px solid #fff;
+  	color : #000;
+  }
+
+  #menu a:hover	{
+  	color : #f00;
+  }
+
+
+  body.section-1 #menu li#nav-1 a, 
+  body.section-2 #menu li#nav-2 a,
+  body.section-3 #menu li#nav-3 a,
+  body.section-4 #menu li#nav-4 a {
+  	background : #fff;
+  	border-bottom : 1px solid #fff;
+  	color : #000;
+  }
+
+  #menu #subnav-1,
+  #menu #subnav-2,
+  #menu #subnav-3,
+  #menu #subnav-4 {
+  	display : none;
+  	width: 90%;
+  }
+
+  body.section-1 #menu ul#subnav-1, 
+  body.section-2 #menu ul#subnav-2,
+  body.section-3 #menu ul#subnav-3,
+  body.section-4 #menu ul#subnav-4 {
+  	display : inline;
+  	left : 10px;
+  	position : absolute;
+  	top : 30px;
+  }
+
+  body.section-1 #menu ul#subnav-1 a, 
+  body.section-2 #menu ul#subnav-2 a,
+  body.section-3 #menu ul#subnav-3 a,
+  body.section-4 #menu ul#subnav-4 a {
+  	background : #FFF;
+  	border : none;
+  	border-left : 1px solid #ccc;
+  	color : #999;
+  	font-size : smaller;
+  	font-weight : bold;
+  	line-height : 15px;
+  	margin-right : 4px;
+  	padding : 2px 15px 2px 15px;
+  	text-decoration : none;
+  }
+
+   #menu ul a:hover {
+  	color : #f00 !important;
+  }
+
+  #contents {
+  	background : #fff;
+  	border : 1px solid #ccc;
+  	border-top : none;
+  	clear : both;
+  	margin : 0px;
+  	padding : 15px;
+  }
+  </style>
+  <%= csrf_meta_tags %>
+  <% case controller.controller_name 
+    when "upcoming_events"
+      section_number = 1
+    when "potential_subjects", "nijmegen_schedulings", "att_schedulings", "leiden_schedulings"
+      section_number = 2
+    when "subjects"
+      section_number = 3
+    when "reports", "successful_transfers", "missing_transfers", "unrateds", "past_dues", "t1s", "freesurfer_qualities"
+      section_number = 4
+    end %>
+</head>
+<body class="section-<%= section_number %>">
+<ul id="menu">
+  <li id="nav-1"><%= link_to "Upcoming events", upcoming_events_path %></li>
+  <li id="nav-2"><%= link_to "Scheduling", leiden_schedulings_path %>
+	  
+    <ul id="subnav-2">
+      <li><%= link_to "Leiden", leiden_schedulings_path %></li>
+      <li><%= link_to "Generation R", potential_subjects_path %></li>
+      <li><%= link_to "Nijmegen", nijmegen_schedulings_path %></li>
+      <li><%= link_to "ATT", att_schedulings_path %></li>
+    </ul>
+  </li>
+  <li id="nav-3"><%= link_to "Subjects", subjects_path %></li>
+  <li id="nav-4"><%= link_to "Record keeping", reports_path %>
+	  
+    <ul id="subnav-4">
+		
+      <li><%= link_to "Reports", reports_path %></li>
+	  <li><%= link_to "Missing transfers", missing_transfers_path %></li>
+	  <li><%= link_to "Successful transfers", successful_transfers_path %></li>
+      <li><%= link_to "Unrated", unrateds_path %></li>
+      <li><%= link_to "Past due events", past_dues_path %></li>
+      <li><%= link_to "FreeSurfer ratings", freesurfer_qualities_path %></li>
+      <li><%= link_to "T1 ratings", t1s_path %></li>
+    </ul>
+  </li>
+  <li id="nav-5"><%= link_to "Logout", logout_path %></li>
+</ul>
+  <br>
+    <%= yield %>
+
+</body>
+</html>

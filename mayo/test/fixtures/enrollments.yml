@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  subject_id: 1
+  study_id: 1
+  study_of_origin: 1
+  study_entry_date: 2011-12-06
+  participant_status: 1
+  group_id: 1
+  note: MyText
+  created_by: MyString
+  updated_by: MyString
+  lock_version: 1
+
+two:
+  subject_id: 1
+  study_id: 1
+  study_of_origin: 1
+  study_entry_date: 2011-12-06
+  participant_status: 1
+  group_id: 1
+  note: MyText
+  created_by: MyString
+  updated_by: MyString
+  lock_version: 1

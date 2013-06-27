@@ -1,0 +1,25 @@
+<html>
+<head>
+  <title>Mayo: <%= controller.action_name %> (logged in as <%= @login %>)</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="active-scaffold">
+		<%= link_to "Upcoming events", upcoming_events_path %> &bull; 
+		<%= link_to "Generation R scheduling", potential_subjects_path %> &bull; 
+		<%= link_to "Nijmegen scheduling", nijmegen_schedulings_path %> &bull; 
+		<%= link_to "Subjects", subjects_path %> &bull; 
+		<%= link_to "Unrated", unrateds_path %> &bull; 
+		<%= link_to "Past due events", past_dues_path %> &bull; 
+		<%= link_to "Image quality ratings", t1s_path %> &bull; 
+		<%= link_to "Reports", reports_path %> // 
+		<%= link_to "Logout", logout_path %>
+	</div>
+
+		<%= yield %>
+
+
+</body>
+</html>

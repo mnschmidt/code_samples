@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  subject_id: 1
+  phone: MyString
+  purpose: 1
+  result: 1
+  note: MyText
+  created_by: MyString
+  updated_by: MyString
+  lock_version: 1
+
+two:
+  subject_id: 1
+  phone: MyString
+  purpose: 1
+  result: 1
+  note: MyText
+  created_by: MyString
+  updated_by: MyString
+  lock_version: 1

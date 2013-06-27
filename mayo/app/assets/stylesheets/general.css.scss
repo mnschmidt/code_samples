@@ -1,0 +1,198 @@
+body { 
+  margin: 5px;
+  background-color: #fff; color: #333; }
+
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   13px;
+  line-height: 18px;
+}
+
+th {
+  text-align: left;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a { color: #333333; }
+a:hover { color: #fff; background-color:#8b1e23; }
+
+.fieldWithErrors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#ErrorExplanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#ErrorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#ErrorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#ErrorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+div.uploadStatus {
+  margin: 5px;
+}
+
+div.progressBar {
+  margin: 5px;
+}
+
+div.progressBar div.border {
+  background-color: #fff;
+  border: 1px solid grey;
+  width: 100%;
+}
+
+div.progressBar div.background {
+  background-color: #333;
+  height: 18px;
+  width: 0%;
+}
+
+#banner {
+  font-weight: bold;
+  font-style: italic;
+  background: #f3f3f3;
+  padding-top: 5px;
+  padding-left: 2em;
+  padding-bottom: 5px;
+  border-bottom: 1px solid;
+  border-color: #999999;
+  color: #515c61;
+}
+
+#banner_dark {
+  font-weight: bold;
+  font-style: italic;
+  background: #515c61;
+  padding-top: 5px;
+  padding-left: 2em;
+  padding-bottom: 5px;
+  border-bottom: 1px solid;
+  border-color: #999999;
+  color: #f3f3f3;
+}
+
+#banner_admin {
+  font-weight: bold;
+  font-style: italic;
+  background: #8C1919;
+  padding-top: 5px;
+  padding-left: 2em;
+  padding-bottom: 5px;
+  border-bottom: 1px solid;
+  border-color: #999999;
+  color: #f3f3f3;
+}
+
+#banner_group_leader {
+  font-weight: bold;
+  font-style: italic;
+  background: #0099CC;
+  padding-top: 5px;
+  padding-left: 2em;
+  padding-bottom: 5px;
+  border-bottom: 1px solid;
+  border-color: #999999;
+  color: #ffffff;
+}
+
+#banner_right {
+  text-align: right;
+}
+
+#sub-links {
+  padding-left: 2em;
+  padding-bottom: 3px;
+  border-bottom: 2px solid;
+  border-color: #999999;
+  background: #dae4df;
+}
+
+#side {
+  float: left;
+  font-size: small;
+  padding-top: 1em;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-bottom: 1em;
+  width: 8em;
+  border-right: 1px solid;
+  border-color: #999999;
+  background: #e6e6e6;
+}
+
+#sidebar1 {
+	float: left; 
+	width: 15em; /* since this element is floated, a width must be given */
+	background: #EBEBEB; /* the background color will be displayed for the length of the content in the column, but no further */
+	padding: 15px 0; /* top and bottom padding create visual space within this div */
+}
+
+#mainlinks {
+  padding-left: 2em;
+  padding-bottom: 3px;
+  border-bottom: 2px solid;
+  border-color: #999999;
+  background: #ffffff;
+}
+
+#sublinks {
+  padding-left: 2em;
+  padding-bottom: 3px;
+  border-bottom: 2px solid;
+  border-color: #999999;
+  background: #BCD6FB;
+}
+
+#mainlinks_admin {
+  padding-left: 2em;
+  padding-bottom: 3px;
+  border-bottom: 2px solid;
+  border-color: #999999;
+  background: #f3f3f3;
+}
+
+#show_field_title {
+  color: #B3B3B3;
+}
+
+#datatype {
+  color: #8b1e23;
+}
+
+#gold {
+  color: #FFCC33;
+}
+
+#maroon {
+  color: #8C1919;
+}

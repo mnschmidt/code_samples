@@ -1,0 +1,8 @@
+<dl>
+	<dt>
+		<label for="record_date_letter_sent">Date letter sent</label>
+	</dt>
+	<dd>
+		<%= date_select(:record, :date_letter_sent, :order => [:day, :month, :year], :include_blank => true)	%>
+	</dd>
+</dl>

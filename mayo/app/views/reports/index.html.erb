@@ -1,0 +1,344 @@
+<table border="0" cellspacing="0" cellpadding="7">
+  <tr>
+    <th>&nbsp;</th>
+    <th>Cannabis</th>
+    <th>Smokers</th>
+    <th>Antidepressents</th>
+    <th>*High folate</th>
+    <th>*Low folate</th>
+    <th>Dysregulation</th>
+    <th>Controls</th>
+    <th>Total</th>
+  </tr>
+  <tr class="row-dark">
+    <td class="type">Recruitment goal</td>
+    <td class="entered-value">60</td>
+    <td class="entered-value">60</td>
+    <td class="entered-value"></td>
+    <td class="entered-value"></td>
+    <td class="entered-value"></td>
+    <td class="entered-value"></td>
+    <td class="entered-value">60</td>
+    <td class="entered-value-total">180</td>
+  </tr>
+  <tr>
+    <td class="type">Total in Gen-R</td>
+    <td class="entered-value">149</td>
+    <td class="entered-value">184</td>
+    <td class="entered-value"></td>
+    <td class="entered-value"></td>
+    <td class="entered-value"></td>
+    <td class="entered-value"></td>
+    <td class="entered-value">5515</td>
+    <td class="entered-value-total">5848</td>
+  </tr>
+  <tr class="row-dark">
+    <td class="type">Recruited</td>
+    <td class="entered-value">16</td>
+    <td class="entered-value">26</td>
+    <td class="entered-value"></td>
+    <td class="entered-value"></td>
+    <td class="entered-value"></td>
+    <td class="entered-value"></td>
+    <td class="entered-value">18</td>
+    <td class="entered-value-total">60</td>
+  </tr>
+  <tr>
+    <td class="type">Refused</td>
+    <td class="reported-value"><%= @cannabis_refused %></td>
+    <td class="reported-value"><%= @smokers_refused %></td>
+    <td class="reported-value"><%= @antidepressants_refused %></td>
+    <td class="reported-value"><%= @high_folates_refused %></td>
+    <td class="reported-value"><%= @low_folates_refused %></td>
+    <td class="reported-value"><%= @dysregulations_refused %></td>
+    <td class="reported-value"><%= @controls_refused %></td>
+    <td class="reported-value-total"><%= @total_refused %></td>
+  </tr>
+  <tr>
+    <td class="sub-header" colspan="9">Scheduled</td>
+  </tr>
+  <tr class="row-dark">
+    <td class="type">No show</td>
+    <td class="reported-value"><%= @cannabis_no_show %></td>
+    <td class="reported-value"><%= @smokers_no_show %></td>
+    <td class="reported-value"><%= @antidepressants_no_show %></td>
+    <td class="reported-value"><%= @high_folates_no_show %></td>
+    <td class="reported-value"><%= @low_folates_no_show %></td>
+    <td class="reported-value"><%= @dysregulations_no_show %></td>
+    <td class="reported-value"><%= @controls_no_show %></td>
+    <td class="reported-value-total"><%= @total_no_show %></td>
+  </tr>
+  <tr>
+    <td class="type">Canceled</td>
+    <td class="reported-value"><%= @cannabis_canceled %></td>
+    <td class="reported-value"><%= @smokers_canceled %></td>
+    <td class="reported-value"><%= @antidepressants_canceled %></td>
+    <td class="reported-value"><%= @high_folates_canceled %></td>
+    <td class="reported-value"><%= @low_folates_canceled %></td>
+    <td class="reported-value"><%= @dysregulations_canceled %></td>
+    <td class="reported-value"><%= @controls_canceled %></td>
+    <td class="reported-value-total"><%= @total_canceled %></td>
+  </tr>
+  <tr>
+    <td class="sub-header" colspan="9">After arrival</td>
+  </tr>
+  <tr class="row-dark">
+    <td class="type">Unwilling child</td>
+    <td class="reported-value"><%= @cannabis_unwilling_children %></td>
+    <td class="reported-value"><%= @smoker_unwilling_children %></td>
+    <td class="reported-value"><%= @antidepressant_unwilling_children %></td>
+    <td class="reported-value"><%= @high_folate_unwilling_children %></td>
+    <td class="reported-value"><%= @low_folate_unwilling_children %></td>
+    <td class="reported-value"><%= @dysregulation_unwilling_children %></td>
+    <td class="reported-value"><%= @control_unwilling_children %></td>
+    <td class="reported-value-total"><%= @total_unwilling_children %></td>
+  </tr>
+  <tr>
+    <td class="type">Unwilling parent</td>
+    <td class="reported-value"><%= @cannabis_unwilling_parents %></td>
+    <td class="reported-value"><%= @smoker_unwilling_parents %></td>
+    <td class="reported-value"><%= @antidepressant_unwilling_parents %></td>
+    <td class="reported-value"><%= @high_folate_unwilling_parents %></td>
+    <td class="reported-value"><%= @low_folate_unwilling_parents %></td>
+    <td class="reported-value"><%= @dysregulation_unwilling_parents %></td>
+    <td class="reported-value"><%= @control_unwilling_parents %></td>
+    <td class="reported-value-total"><%= @total_unwilling_parents %></td>
+  </tr>
+  <tr class="row-dark">
+    <td class="type">Partially completed scanning protocol</td>
+    <td class="reported-value">&nbsp;</td>
+    <td class="reported-value">&nbsp;</td>
+    <td class="reported-value">&nbsp;</td>
+    <td class="reported-value">&nbsp;</td>
+    <td class="reported-value">&nbsp;</td>
+    <td class="reported-value">&nbsp;</td>
+    <td class="reported-value">&nbsp;</td>
+    <td class="reported-value-total"><%= @partially_completed_scans %></td>
+  </tr>
+  <tr>
+    <td class="type">Entirely completed scanning protocol</td>
+    <td class="reported-value">&nbsp;</td>
+    <td class="reported-value">&nbsp;</td>
+    <td class="reported-value">&nbsp;</td>
+    <td class="reported-value">&nbsp;</td>
+    <td class="reported-value">&nbsp;</td>
+    <td class="reported-value">&nbsp;</td>
+    <td class="reported-value">&nbsp;</td>
+    <td class="reported-value-total"><%= @successfully_completed_scans %></td>
+  </tr>
+  <tr class="row-dark">
+    <td class="type"><%= link_to "Partially + entirely completed scanning protocol", :controller => "reports", :action => "complete_scans" %></td>
+    <td class="reported-value">&nbsp;</td>
+    <td class="reported-value">&nbsp;</td>
+    <td class="reported-value">&nbsp;</td>
+    <td class="reported-value">&nbsp;</td>
+    <td class="reported-value">&nbsp;</td>
+    <td class="reported-value">&nbsp;</td>
+    <td class="reported-value">&nbsp;</td>
+    <td class="reported-value-total"><%= @scans_total %></td>
+  </tr>
+  <tr>
+    <td class="sub-header" colspan="9">Neuropsychological &amp; Imaging</td>
+  </tr>
+  <tr class="row-dark">
+    <td class="type">NEPSY-II</td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value-total"></td>
+  </tr>
+  <tr>
+    <td class="type">T1 (total) </td>
+    <td class="reported-value"><%= @cannabis_t1s %></td>
+    <td class="reported-value"><%= @smoker_t1s %></td>
+    <td class="reported-value"><%= @antidepressant_t1s %></td>
+    <td class="reported-value"><%= @high_folate_t1s %></td>
+    <td class="reported-value"><%= @low_folate_t1s %></td>
+    <td class="reported-value"><%= @dysregulation_t1s %></td>
+    <td class="reported-value"><%= @control_t1s %></td>
+    <td class="reported-value-total"><%= @total_t1s %></td>
+  </tr>
+  <tr class="row-dark">
+    <td class="type">T1 - poor quality</td>
+    <td class="reported-value"><%= @cannabis_poor_t1s %></td>
+    <td class="reported-value"><%= @smoker_poor_t1s %></td>
+    <td class="reported-value"><%= @antidepressant_poor_t1s %></td>
+    <td class="reported-value"><%= @high_folate_poor_t1s %></td>
+    <td class="reported-value"><%= @low_folate_poor_t1s %></td>
+    <td class="reported-value"><%= @dysregulation_poor_t1s %></td>
+    <td class="reported-value"><%= @control_poor_t1s %></td>
+    <td class="reported-value-total"><%= @total_poor_t1s %></td>
+  </tr>
+  <tr>
+    <td class="type">PD (total) </td>
+    <td class="reported-value"><%= @cannabis_pds %></td>
+    <td class="reported-value"><%= @smoker_pds %></td>
+    <td class="reported-value"><%= @antidepressant_pds %></td>
+    <td class="reported-value"><%= @high_folate_pds %></td>
+    <td class="reported-value"><%= @low_folate_pds %></td>
+    <td class="reported-value"><%= @dysregulation_pds %></td>
+    <td class="reported-value"><%= @control_pds %></td>
+    <td class="reported-value-total"><%= @total_pds %></td>
+  </tr>
+  <tr class="row-dark">
+    <td class="type">PD - poor quality</td>
+    <td class="reported-value"><%= @cannabis_poor_pds %></td>
+    <td class="reported-value"><%= @smoker_poor_pds %></td>
+    <td class="reported-value"><%= @antidepressant_poor_pds %></td>
+    <td class="reported-value"><%= @high_folate_poor_pds %></td>
+    <td class="reported-value"><%= @low_folate_poor_pds %></td>
+    <td class="reported-value"><%= @dysregulation_poor_pds %></td>
+    <td class="reported-value"><%= @control_poor_pds %></td>
+    <td class="reported-value-total"><%= @total_poor_pds %></td>
+  </tr>
+  <tr>
+    <td class="type">DTI (total) </td>
+    <td class="reported-value"><%= @cannabis_dtis %></td>
+    <td class="reported-value"><%= @smoker_dtis %></td>
+    <td class="reported-value"><%= @antidepressant_dtis %></td>
+    <td class="reported-value"><%= @high_folate_dtis %></td>
+    <td class="reported-value"><%= @low_folate_dtis %></td>
+    <td class="reported-value"><%= @dysregulation_dtis %></td>
+    <td class="reported-value"><%= @control_dtis %></td>
+    <td class="reported-value-total"><%= @total_dtis %></td>
+  </tr>
+  <tr class="row-dark">
+    <td class="type">DTI - poor quality</td>
+    <td class="reported-value"><%= @cannabis_poor_dtis %></td>
+    <td class="reported-value"><%= @smoker_poor_dtis %></td>
+    <td class="reported-value"><%= @antidepressant_poor_dtis %></td>
+    <td class="reported-value"><%= @high_folate_poor_dtis %></td>
+    <td class="reported-value"><%= @low_folate_poor_dtis %></td>
+    <td class="reported-value"><%= @dysregulation_poor_dtis %></td>
+    <td class="reported-value"><%= @control_poor_dtis %></td>
+    <td class="reported-value-total"><%= @total_poor_dtis %></td>
+  </tr>
+  <tr>
+    <td class="type">Resting state (total) </td>
+		<td class="reported-value"><%= @cannabis_rss %></td>
+		<td class="reported-value"><%= @smoker_rss %></td>
+		<td class="reported-value"><%= @antidepressant_rss %></td>
+		<td class="reported-value"><%= @high_folate_rss %></td>
+		<td class="reported-value"><%= @low_folate_rss %></td>
+		<td class="reported-value"><%= @dysregulation_rss %></td>
+		<td class="reported-value"><%= @control_rss %></td>
+		<td class="reported-value-total"><%= @total_rss %></td>
+  </tr>
+  <tr class="row-dark">
+    <td class="type">Resting state (total) - 5 min</td>
+		<td class="reported-value"><%= @cannabis_rs5s %></td>
+		<td class="reported-value"><%= @smoker_rs5s %></td>
+		<td class="reported-value"><%= @antidepressant_rs5s %></td>
+		<td class="reported-value"><%= @high_folate_rs5s %></td>
+		<td class="reported-value"><%= @low_folate_rs5s %></td>
+		<td class="reported-value"><%= @dysregulation_rs5s %></td>
+		<td class="reported-value"><%= @control_rs5s %></td>
+		<td class="reported-value-total"><%= @total_rs5s %></td>
+  </tr>
+  <tr>
+    <td class="type">Resting state (total) - 8 min </td>
+		<td class="reported-value"><%= @cannabis_rs8s %></td>
+		<td class="reported-value"><%= @smoker_rs8s %></td>
+		<td class="reported-value"><%= @antidepressant_rs8s %></td>
+		<td class="reported-value"><%= @high_folate_rs8s %></td>
+		<td class="reported-value"><%= @low_folate_rs8s %></td>
+		<td class="reported-value"><%= @dysregulation_rs8s %></td>
+		<td class="reported-value"><%= @control_rs8s %></td>
+		<td class="reported-value-total"><%= @total_rs8s %></td>
+  </tr>
+  <tr class="row-dark">
+    <td class="type">Resting state - 5 min poor quality</td>
+		<td class="reported-value"><%= @cannabis_poor_rs5s %></td>
+		<td class="reported-value"><%= @smoker_poor_rs5s %></td>
+		<td class="reported-value"><%= @antidepressant_poor_rs5s %></td>
+		<td class="reported-value"><%= @high_folate_poor_rs5s %></td>
+		<td class="reported-value"><%= @low_folate_poor_rs5s %></td>
+		<td class="reported-value"><%= @dysregulation_poor_rs5s %></td>
+		<td class="reported-value"><%= @control_poor_rs5s %></td>
+		<td class="reported-value-total"><%= @total_poor_rs5s %></td>
+  </tr>
+  <tr>
+    <td class="type">Resting state - 8 min poor quality</td>
+		<td class="reported-value"><%= @cannabis_poor_rs8s %></td>
+		<td class="reported-value"><%= @smoker_poor_rs8s %></td>
+		<td class="reported-value"><%= @antidepressant_poor_rs8s %></td>
+		<td class="reported-value"><%= @high_folate_poor_rs8s %></td>
+		<td class="reported-value"><%= @low_folate_poor_rs8s %></td>
+		<td class="reported-value"><%= @dysregulation_poor_rs8s %></td>
+		<td class="reported-value"><%= @control_poor_rs8s %></td>
+		<td class="reported-value-total"><%= @total_poor_rs8s %></td>
+  </tr>
+  <tr>
+    <td class="sub-header" colspan="9">Total usable data</td>
+  </tr>
+  <tr class="row-dark">
+    <td class="type">NEPSY-II</td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value-total"></td>
+  </tr>
+  <tr>
+    <td class="type">T1</td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value-total"></td>
+  </tr>
+  <tr class="row-dark">
+    <td class="type">PD</td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value-total"></td>
+  </tr>
+  <tr>
+    <td class="type">DTI</td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value-total"></td>
+  </tr>
+  <tr class="row-dark">
+    <td class="type">Resting state - 5 min</td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value-total"></td>
+  </tr>
+  <tr>
+    <td class="type">Resting state - 8 min</td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value"></td>
+    <td class="reported-value-total"></td>
+  </tr>
+</table>

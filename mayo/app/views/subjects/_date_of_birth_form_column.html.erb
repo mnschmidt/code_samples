@@ -1,0 +1,8 @@
+<dl>
+	<dt>
+		<label for="record_date_of_birth">Date of birth</label>
+	</dt>
+	<dd>
+		<%= date_select(:record, :date_of_birth, :start_year => 1990, :end_year => Time.now.year, :order => [:day, :month, :year], :include_blank => true)	%>
+	</dd>
+</dl>

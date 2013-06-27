@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  procedure_id: 1
+  study_id: 1
+  order_index: 1
+
+two:
+  procedure_id: 1
+  study_id: 1
+  order_index: 1

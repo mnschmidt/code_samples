@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  enrollment_id: 1
+  study_procedure_id: 1
+  event_start_time: 2011-12-06 15:32:35
+  event_end_time: 2011-12-06 15:32:35
+  event_status: 1
+  event_quality: 1
+  event_note: MyText
+  key_person: MyString
+  ignore_event: 1
+  created_by: MyString
+  updated_by: MyString
+  lock_version: 1
+
+two:
+  enrollment_id: 1
+  study_procedure_id: 1
+  event_start_time: 2011-12-06 15:32:35
+  event_end_time: 2011-12-06 15:32:35
+  event_status: 1
+  event_quality: 1
+  event_note: MyText
+  key_person: MyString
+  ignore_event: 1
+  created_by: MyString
+  updated_by: MyString
+  lock_version: 1

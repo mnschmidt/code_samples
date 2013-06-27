@@ -1,0 +1,15 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  date:
+    formats:
+      default: "%d %B, %Y"
+      #default: "%d.%m.%Y"
+  time:
+    formats:
+      default: "%d %B, %Y %I:%M %p"
+      #default: "%d.%m.%Y %I:%M %p"
+  active_scaffold:
+    date_picker_options:
+      firstDay: 1

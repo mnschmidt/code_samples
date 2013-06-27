@@ -1,0 +1,18 @@
+<dl>
+	<dt>
+		<label for="record_event_status">Event status</label>
+	</dt>
+	<dd>
+		<%= select("record", "event_status", [["- select -", nil],
+																					["Scheduled",1],
+																					["Canceled",3],
+																					["No show",2],
+																					["Unwilling child",4],
+																					["Unwilling parent",5],
+																					["Try again at a later date",10],
+																					["Partially successful; try again at a later date",11],
+																					["Partially successful",6],
+																					["Completed successfully",7]]) %>
+
+	</dd>
+</dl>

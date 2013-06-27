@@ -1,0 +1,44 @@
+// Place all the styles related to the reports controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+th {
+	background-color: #333;
+	color: #FFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: smaller;
+}
+.errorPossible {
+	background-color: #fcc;
+	margin: 2px 0;
+	border: solid 1px #f66
+}
+.entered-value {
+	text-align: right;
+}
+.entered-value-total {
+	text-align: right;
+	font-weight: bold;
+}
+.row-dark {
+	background-color: #E6F2FF;
+}
+.reported-value {
+	text-align: right;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.reported-value-total {
+	text-align: right;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.type {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.sub-header {
+	color: #FFF;
+	background-color: #666;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: small;
+}

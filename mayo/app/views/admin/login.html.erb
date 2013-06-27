@@ -1,0 +1,23 @@
+<div id="login" align="center">
+	<%= form_tag do %>
+	<table border="0" cellspacing="5" cellpadding="5">
+		<tr>
+			<th colspan="2"><div align="center">Please Log In</div></th>
+		</tr>
+		<tr>
+			<td colspan="2"><div align="center" >Mayo</div></td>
+		</tr>
+		<tr>
+			<td><div align="right">User Name </div></td>
+			<td><%= text_field_tag :login, params[:login] %></td>
+		</tr>
+		<tr>
+			<td><div align="right">Password </div></td>
+			<td><%= password_field_tag :password, params[:password] %></td>
+		</tr>
+		<tr>
+			<td colspan="2"><div align="right"><%= submit_tag "Login" %></div></td>
+		</tr>
+	</table>
+	<% end %>
+</div>

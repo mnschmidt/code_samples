@@ -1,0 +1,2 @@
+module UnratedsHelper
+end

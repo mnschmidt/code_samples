@@ -1,0 +1,16 @@
+<dl>
+	<dt>
+		<label for="record_result">Result</label>
+	</dt>
+	<dd>
+		<%= select("record", "result", [["- select -", nil],
+																		["Scheduled",1],
+																		["Refused - unwilling child",2],
+																		["Refused - unwilling parent",3],
+																		["Asked to be called back",4],
+																		["Phone not answered",5],
+																		["Never answered - ending calls",6],
+																		["Other",7]]) %>
+
+	</dd>
+</dl>

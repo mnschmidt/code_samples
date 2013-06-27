@@ -1,0 +1,383 @@
+              show_search_appointments GET    /appointments/show_search(.:format)                    {:action=>"show_search", :controller=>"appointments"}
+             render_field_appointments GET    /appointments/render_field(.:format)                   {:action=>"render_field", :controller=>"appointments"}
+                       row_appointment GET    /appointments/:id/row(.:format)                        {:action=>"row", :controller=>"appointments"}
+             update_column_appointment POST   /appointments/:id/update_column(.:format)              {:action=>"update_column", :controller=>"appointments"}
+              render_field_appointment GET    /appointments/:id/render_field(.:format)               {:action=>"render_field", :controller=>"appointments"}
+          edit_associated_appointments GET    /appointments/edit_associated(.:format)                {:action=>"edit_associated", :controller=>"appointments"}
+             new_existing_appointments GET    /appointments/new_existing(.:format)                   {:action=>"new_existing", :controller=>"appointments"}
+             add_existing_appointments POST   /appointments/add_existing(.:format)                   {:action=>"add_existing", :controller=>"appointments"}
+           edit_associated_appointment GET    /appointments/:id/edit_associated(.:format)            {:action=>"edit_associated", :controller=>"appointments"}
+           add_association_appointment GET    /appointments/:id/add_association(.:format)            {:action=>"add_association", :controller=>"appointments"}
+          destroy_existing_appointment DELETE /appointments/:id/destroy_existing(.:format)           {:action=>"destroy_existing", :controller=>"appointments"}
+                          appointments GET    /appointments(.:format)                                {:action=>"index", :controller=>"appointments"}
+                                       POST   /appointments(.:format)                                {:action=>"create", :controller=>"appointments"}
+                       new_appointment GET    /appointments/new(.:format)                            {:action=>"new", :controller=>"appointments"}
+                      edit_appointment GET    /appointments/:id/edit(.:format)                       {:action=>"edit", :controller=>"appointments"}
+                           appointment GET    /appointments/:id(.:format)                            {:action=>"show", :controller=>"appointments"}
+                                       PUT    /appointments/:id(.:format)                            {:action=>"update", :controller=>"appointments"}
+                                       DELETE /appointments/:id(.:format)                            {:action=>"destroy", :controller=>"appointments"}
+                  show_search_unrateds GET    /unrateds/show_search(.:format)                        {:action=>"show_search", :controller=>"unrateds"}
+                 render_field_unrateds GET    /unrateds/render_field(.:format)                       {:action=>"render_field", :controller=>"unrateds"}
+                           row_unrated GET    /unrateds/:id/row(.:format)                            {:action=>"row", :controller=>"unrateds"}
+                 update_column_unrated POST   /unrateds/:id/update_column(.:format)                  {:action=>"update_column", :controller=>"unrateds"}
+                  render_field_unrated GET    /unrateds/:id/render_field(.:format)                   {:action=>"render_field", :controller=>"unrateds"}
+              edit_associated_unrateds GET    /unrateds/edit_associated(.:format)                    {:action=>"edit_associated", :controller=>"unrateds"}
+                 new_existing_unrateds GET    /unrateds/new_existing(.:format)                       {:action=>"new_existing", :controller=>"unrateds"}
+                 add_existing_unrateds POST   /unrateds/add_existing(.:format)                       {:action=>"add_existing", :controller=>"unrateds"}
+               edit_associated_unrated GET    /unrateds/:id/edit_associated(.:format)                {:action=>"edit_associated", :controller=>"unrateds"}
+               add_association_unrated GET    /unrateds/:id/add_association(.:format)                {:action=>"add_association", :controller=>"unrateds"}
+              destroy_existing_unrated DELETE /unrateds/:id/destroy_existing(.:format)               {:action=>"destroy_existing", :controller=>"unrateds"}
+                              unrateds GET    /unrateds(.:format)                                    {:action=>"index", :controller=>"unrateds"}
+                                       POST   /unrateds(.:format)                                    {:action=>"create", :controller=>"unrateds"}
+                           new_unrated GET    /unrateds/new(.:format)                                {:action=>"new", :controller=>"unrateds"}
+                          edit_unrated GET    /unrateds/:id/edit(.:format)                           {:action=>"edit", :controller=>"unrateds"}
+                               unrated GET    /unrateds/:id(.:format)                                {:action=>"show", :controller=>"unrateds"}
+                                       PUT    /unrateds/:id(.:format)                                {:action=>"update", :controller=>"unrateds"}
+                                       DELETE /unrateds/:id(.:format)                                {:action=>"destroy", :controller=>"unrateds"}
+              show_search_study_groups GET    /study_groups/show_search(.:format)                    {:action=>"show_search", :controller=>"study_groups"}
+             render_field_study_groups GET    /study_groups/render_field(.:format)                   {:action=>"render_field", :controller=>"study_groups"}
+                       row_study_group GET    /study_groups/:id/row(.:format)                        {:action=>"row", :controller=>"study_groups"}
+             update_column_study_group POST   /study_groups/:id/update_column(.:format)              {:action=>"update_column", :controller=>"study_groups"}
+              render_field_study_group GET    /study_groups/:id/render_field(.:format)               {:action=>"render_field", :controller=>"study_groups"}
+          edit_associated_study_groups GET    /study_groups/edit_associated(.:format)                {:action=>"edit_associated", :controller=>"study_groups"}
+             new_existing_study_groups GET    /study_groups/new_existing(.:format)                   {:action=>"new_existing", :controller=>"study_groups"}
+             add_existing_study_groups POST   /study_groups/add_existing(.:format)                   {:action=>"add_existing", :controller=>"study_groups"}
+           edit_associated_study_group GET    /study_groups/:id/edit_associated(.:format)            {:action=>"edit_associated", :controller=>"study_groups"}
+           add_association_study_group GET    /study_groups/:id/add_association(.:format)            {:action=>"add_association", :controller=>"study_groups"}
+          destroy_existing_study_group DELETE /study_groups/:id/destroy_existing(.:format)           {:action=>"destroy_existing", :controller=>"study_groups"}
+                          study_groups GET    /study_groups(.:format)                                {:action=>"index", :controller=>"study_groups"}
+                                       POST   /study_groups(.:format)                                {:action=>"create", :controller=>"study_groups"}
+                       new_study_group GET    /study_groups/new(.:format)                            {:action=>"new", :controller=>"study_groups"}
+                      edit_study_group GET    /study_groups/:id/edit(.:format)                       {:action=>"edit", :controller=>"study_groups"}
+                           study_group GET    /study_groups/:id(.:format)                            {:action=>"show", :controller=>"study_groups"}
+                                       PUT    /study_groups/:id(.:format)                            {:action=>"update", :controller=>"study_groups"}
+                                       DELETE /study_groups/:id(.:format)                            {:action=>"destroy", :controller=>"study_groups"}
+           show_search_preprocess_jobs GET    /preprocess_jobs/show_search(.:format)                 {:action=>"show_search", :controller=>"preprocess_jobs"}
+          render_field_preprocess_jobs GET    /preprocess_jobs/render_field(.:format)                {:action=>"render_field", :controller=>"preprocess_jobs"}
+                    row_preprocess_job GET    /preprocess_jobs/:id/row(.:format)                     {:action=>"row", :controller=>"preprocess_jobs"}
+          update_column_preprocess_job POST   /preprocess_jobs/:id/update_column(.:format)           {:action=>"update_column", :controller=>"preprocess_jobs"}
+           render_field_preprocess_job GET    /preprocess_jobs/:id/render_field(.:format)            {:action=>"render_field", :controller=>"preprocess_jobs"}
+       edit_associated_preprocess_jobs GET    /preprocess_jobs/edit_associated(.:format)             {:action=>"edit_associated", :controller=>"preprocess_jobs"}
+          new_existing_preprocess_jobs GET    /preprocess_jobs/new_existing(.:format)                {:action=>"new_existing", :controller=>"preprocess_jobs"}
+          add_existing_preprocess_jobs POST   /preprocess_jobs/add_existing(.:format)                {:action=>"add_existing", :controller=>"preprocess_jobs"}
+        edit_associated_preprocess_job GET    /preprocess_jobs/:id/edit_associated(.:format)         {:action=>"edit_associated", :controller=>"preprocess_jobs"}
+        add_association_preprocess_job GET    /preprocess_jobs/:id/add_association(.:format)         {:action=>"add_association", :controller=>"preprocess_jobs"}
+       destroy_existing_preprocess_job DELETE /preprocess_jobs/:id/destroy_existing(.:format)        {:action=>"destroy_existing", :controller=>"preprocess_jobs"}
+                       preprocess_jobs GET    /preprocess_jobs(.:format)                             {:action=>"index", :controller=>"preprocess_jobs"}
+                                       POST   /preprocess_jobs(.:format)                             {:action=>"create", :controller=>"preprocess_jobs"}
+                    new_preprocess_job GET    /preprocess_jobs/new(.:format)                         {:action=>"new", :controller=>"preprocess_jobs"}
+                   edit_preprocess_job GET    /preprocess_jobs/:id/edit(.:format)                    {:action=>"edit", :controller=>"preprocess_jobs"}
+                        preprocess_job GET    /preprocess_jobs/:id(.:format)                         {:action=>"show", :controller=>"preprocess_jobs"}
+                                       PUT    /preprocess_jobs/:id(.:format)                         {:action=>"update", :controller=>"preprocess_jobs"}
+                                       DELETE /preprocess_jobs/:id(.:format)                         {:action=>"destroy", :controller=>"preprocess_jobs"}
+      show_search_freesurfer_qualities GET    /freesurfer_qualities/show_search(.:format)            {:action=>"show_search", :controller=>"freesurfer_qualities"}
+     render_field_freesurfer_qualities GET    /freesurfer_qualities/render_field(.:format)           {:action=>"render_field", :controller=>"freesurfer_qualities"}
+                row_freesurfer_quality GET    /freesurfer_qualities/:id/row(.:format)                {:action=>"row", :controller=>"freesurfer_qualities"}
+      update_column_freesurfer_quality POST   /freesurfer_qualities/:id/update_column(.:format)      {:action=>"update_column", :controller=>"freesurfer_qualities"}
+       render_field_freesurfer_quality GET    /freesurfer_qualities/:id/render_field(.:format)       {:action=>"render_field", :controller=>"freesurfer_qualities"}
+  edit_associated_freesurfer_qualities GET    /freesurfer_qualities/edit_associated(.:format)        {:action=>"edit_associated", :controller=>"freesurfer_qualities"}
+     new_existing_freesurfer_qualities GET    /freesurfer_qualities/new_existing(.:format)           {:action=>"new_existing", :controller=>"freesurfer_qualities"}
+     add_existing_freesurfer_qualities POST   /freesurfer_qualities/add_existing(.:format)           {:action=>"add_existing", :controller=>"freesurfer_qualities"}
+    edit_associated_freesurfer_quality GET    /freesurfer_qualities/:id/edit_associated(.:format)    {:action=>"edit_associated", :controller=>"freesurfer_qualities"}
+    add_association_freesurfer_quality GET    /freesurfer_qualities/:id/add_association(.:format)    {:action=>"add_association", :controller=>"freesurfer_qualities"}
+   destroy_existing_freesurfer_quality DELETE /freesurfer_qualities/:id/destroy_existing(.:format)   {:action=>"destroy_existing", :controller=>"freesurfer_qualities"}
+                  freesurfer_qualities GET    /freesurfer_qualities(.:format)                        {:action=>"index", :controller=>"freesurfer_qualities"}
+                                       POST   /freesurfer_qualities(.:format)                        {:action=>"create", :controller=>"freesurfer_qualities"}
+                new_freesurfer_quality GET    /freesurfer_qualities/new(.:format)                    {:action=>"new", :controller=>"freesurfer_qualities"}
+               edit_freesurfer_quality GET    /freesurfer_qualities/:id/edit(.:format)               {:action=>"edit", :controller=>"freesurfer_qualities"}
+                    freesurfer_quality GET    /freesurfer_qualities/:id(.:format)                    {:action=>"show", :controller=>"freesurfer_qualities"}
+                                       PUT    /freesurfer_qualities/:id(.:format)                    {:action=>"update", :controller=>"freesurfer_qualities"}
+                                       DELETE /freesurfer_qualities/:id(.:format)                    {:action=>"destroy", :controller=>"freesurfer_qualities"}
+               show_search_phone_calls GET    /phone_calls/show_search(.:format)                     {:action=>"show_search", :controller=>"phone_calls"}
+              render_field_phone_calls GET    /phone_calls/render_field(.:format)                    {:action=>"render_field", :controller=>"phone_calls"}
+                        row_phone_call GET    /phone_calls/:id/row(.:format)                         {:action=>"row", :controller=>"phone_calls"}
+              update_column_phone_call POST   /phone_calls/:id/update_column(.:format)               {:action=>"update_column", :controller=>"phone_calls"}
+               render_field_phone_call GET    /phone_calls/:id/render_field(.:format)                {:action=>"render_field", :controller=>"phone_calls"}
+           edit_associated_phone_calls GET    /phone_calls/edit_associated(.:format)                 {:action=>"edit_associated", :controller=>"phone_calls"}
+              new_existing_phone_calls GET    /phone_calls/new_existing(.:format)                    {:action=>"new_existing", :controller=>"phone_calls"}
+              add_existing_phone_calls POST   /phone_calls/add_existing(.:format)                    {:action=>"add_existing", :controller=>"phone_calls"}
+            edit_associated_phone_call GET    /phone_calls/:id/edit_associated(.:format)             {:action=>"edit_associated", :controller=>"phone_calls"}
+            add_association_phone_call GET    /phone_calls/:id/add_association(.:format)             {:action=>"add_association", :controller=>"phone_calls"}
+           destroy_existing_phone_call DELETE /phone_calls/:id/destroy_existing(.:format)            {:action=>"destroy_existing", :controller=>"phone_calls"}
+                           phone_calls GET    /phone_calls(.:format)                                 {:action=>"index", :controller=>"phone_calls"}
+                                       POST   /phone_calls(.:format)                                 {:action=>"create", :controller=>"phone_calls"}
+                        new_phone_call GET    /phone_calls/new(.:format)                             {:action=>"new", :controller=>"phone_calls"}
+                       edit_phone_call GET    /phone_calls/:id/edit(.:format)                        {:action=>"edit", :controller=>"phone_calls"}
+                            phone_call GET    /phone_calls/:id(.:format)                             {:action=>"show", :controller=>"phone_calls"}
+                                       PUT    /phone_calls/:id(.:format)                             {:action=>"update", :controller=>"phone_calls"}
+                                       DELETE /phone_calls/:id(.:format)                             {:action=>"destroy", :controller=>"phone_calls"}
+                    show_search_events GET    /events/show_search(.:format)                          {:action=>"show_search", :controller=>"events"}
+                   render_field_events GET    /events/render_field(.:format)                         {:action=>"render_field", :controller=>"events"}
+                             row_event GET    /events/:id/row(.:format)                              {:action=>"row", :controller=>"events"}
+                   update_column_event POST   /events/:id/update_column(.:format)                    {:action=>"update_column", :controller=>"events"}
+                    render_field_event GET    /events/:id/render_field(.:format)                     {:action=>"render_field", :controller=>"events"}
+                edit_associated_events GET    /events/edit_associated(.:format)                      {:action=>"edit_associated", :controller=>"events"}
+                   new_existing_events GET    /events/new_existing(.:format)                         {:action=>"new_existing", :controller=>"events"}
+                   add_existing_events POST   /events/add_existing(.:format)                         {:action=>"add_existing", :controller=>"events"}
+                 edit_associated_event GET    /events/:id/edit_associated(.:format)                  {:action=>"edit_associated", :controller=>"events"}
+                 add_association_event GET    /events/:id/add_association(.:format)                  {:action=>"add_association", :controller=>"events"}
+                destroy_existing_event DELETE /events/:id/destroy_existing(.:format)                 {:action=>"destroy_existing", :controller=>"events"}
+                                events GET    /events(.:format)                                      {:action=>"index", :controller=>"events"}
+                                       POST   /events(.:format)                                      {:action=>"create", :controller=>"events"}
+                             new_event GET    /events/new(.:format)                                  {:action=>"new", :controller=>"events"}
+                            edit_event GET    /events/:id/edit(.:format)                             {:action=>"edit", :controller=>"events"}
+                                 event GET    /events/:id(.:format)                                  {:action=>"show", :controller=>"events"}
+                                       PUT    /events/:id(.:format)                                  {:action=>"update", :controller=>"events"}
+                                       DELETE /events/:id(.:format)                                  {:action=>"destroy", :controller=>"events"}
+          show_search_study_procedures GET    /study_procedures/show_search(.:format)                {:action=>"show_search", :controller=>"study_procedures"}
+         render_field_study_procedures GET    /study_procedures/render_field(.:format)               {:action=>"render_field", :controller=>"study_procedures"}
+                   row_study_procedure GET    /study_procedures/:id/row(.:format)                    {:action=>"row", :controller=>"study_procedures"}
+         update_column_study_procedure POST   /study_procedures/:id/update_column(.:format)          {:action=>"update_column", :controller=>"study_procedures"}
+          render_field_study_procedure GET    /study_procedures/:id/render_field(.:format)           {:action=>"render_field", :controller=>"study_procedures"}
+      edit_associated_study_procedures GET    /study_procedures/edit_associated(.:format)            {:action=>"edit_associated", :controller=>"study_procedures"}
+         new_existing_study_procedures GET    /study_procedures/new_existing(.:format)               {:action=>"new_existing", :controller=>"study_procedures"}
+         add_existing_study_procedures POST   /study_procedures/add_existing(.:format)               {:action=>"add_existing", :controller=>"study_procedures"}
+       edit_associated_study_procedure GET    /study_procedures/:id/edit_associated(.:format)        {:action=>"edit_associated", :controller=>"study_procedures"}
+       add_association_study_procedure GET    /study_procedures/:id/add_association(.:format)        {:action=>"add_association", :controller=>"study_procedures"}
+      destroy_existing_study_procedure DELETE /study_procedures/:id/destroy_existing(.:format)       {:action=>"destroy_existing", :controller=>"study_procedures"}
+                      study_procedures GET    /study_procedures(.:format)                            {:action=>"index", :controller=>"study_procedures"}
+                                       POST   /study_procedures(.:format)                            {:action=>"create", :controller=>"study_procedures"}
+                   new_study_procedure GET    /study_procedures/new(.:format)                        {:action=>"new", :controller=>"study_procedures"}
+                  edit_study_procedure GET    /study_procedures/:id/edit(.:format)                   {:action=>"edit", :controller=>"study_procedures"}
+                       study_procedure GET    /study_procedures/:id(.:format)                        {:action=>"show", :controller=>"study_procedures"}
+                                       PUT    /study_procedures/:id(.:format)                        {:action=>"update", :controller=>"study_procedures"}
+                                       DELETE /study_procedures/:id(.:format)                        {:action=>"destroy", :controller=>"study_procedures"}
+                show_search_procedures GET    /procedures/show_search(.:format)                      {:action=>"show_search", :controller=>"procedures"}
+               render_field_procedures GET    /procedures/render_field(.:format)                     {:action=>"render_field", :controller=>"procedures"}
+                         row_procedure GET    /procedures/:id/row(.:format)                          {:action=>"row", :controller=>"procedures"}
+               update_column_procedure POST   /procedures/:id/update_column(.:format)                {:action=>"update_column", :controller=>"procedures"}
+                render_field_procedure GET    /procedures/:id/render_field(.:format)                 {:action=>"render_field", :controller=>"procedures"}
+            edit_associated_procedures GET    /procedures/edit_associated(.:format)                  {:action=>"edit_associated", :controller=>"procedures"}
+               new_existing_procedures GET    /procedures/new_existing(.:format)                     {:action=>"new_existing", :controller=>"procedures"}
+               add_existing_procedures POST   /procedures/add_existing(.:format)                     {:action=>"add_existing", :controller=>"procedures"}
+             edit_associated_procedure GET    /procedures/:id/edit_associated(.:format)              {:action=>"edit_associated", :controller=>"procedures"}
+             add_association_procedure GET    /procedures/:id/add_association(.:format)              {:action=>"add_association", :controller=>"procedures"}
+            destroy_existing_procedure DELETE /procedures/:id/destroy_existing(.:format)             {:action=>"destroy_existing", :controller=>"procedures"}
+                            procedures GET    /procedures(.:format)                                  {:action=>"index", :controller=>"procedures"}
+                                       POST   /procedures(.:format)                                  {:action=>"create", :controller=>"procedures"}
+                         new_procedure GET    /procedures/new(.:format)                              {:action=>"new", :controller=>"procedures"}
+                        edit_procedure GET    /procedures/:id/edit(.:format)                         {:action=>"edit", :controller=>"procedures"}
+                             procedure GET    /procedures/:id(.:format)                              {:action=>"show", :controller=>"procedures"}
+                                       PUT    /procedures/:id(.:format)                              {:action=>"update", :controller=>"procedures"}
+                                       DELETE /procedures/:id(.:format)                              {:action=>"destroy", :controller=>"procedures"}
+            show_search_sequence_types GET    /sequence_types/show_search(.:format)                  {:action=>"show_search", :controller=>"sequence_types"}
+           render_field_sequence_types GET    /sequence_types/render_field(.:format)                 {:action=>"render_field", :controller=>"sequence_types"}
+                     row_sequence_type GET    /sequence_types/:id/row(.:format)                      {:action=>"row", :controller=>"sequence_types"}
+           update_column_sequence_type POST   /sequence_types/:id/update_column(.:format)            {:action=>"update_column", :controller=>"sequence_types"}
+            render_field_sequence_type GET    /sequence_types/:id/render_field(.:format)             {:action=>"render_field", :controller=>"sequence_types"}
+        edit_associated_sequence_types GET    /sequence_types/edit_associated(.:format)              {:action=>"edit_associated", :controller=>"sequence_types"}
+           new_existing_sequence_types GET    /sequence_types/new_existing(.:format)                 {:action=>"new_existing", :controller=>"sequence_types"}
+           add_existing_sequence_types POST   /sequence_types/add_existing(.:format)                 {:action=>"add_existing", :controller=>"sequence_types"}
+         edit_associated_sequence_type GET    /sequence_types/:id/edit_associated(.:format)          {:action=>"edit_associated", :controller=>"sequence_types"}
+         add_association_sequence_type GET    /sequence_types/:id/add_association(.:format)          {:action=>"add_association", :controller=>"sequence_types"}
+        destroy_existing_sequence_type DELETE /sequence_types/:id/destroy_existing(.:format)         {:action=>"destroy_existing", :controller=>"sequence_types"}
+                        sequence_types GET    /sequence_types(.:format)                              {:action=>"index", :controller=>"sequence_types"}
+                                       POST   /sequence_types(.:format)                              {:action=>"create", :controller=>"sequence_types"}
+                     new_sequence_type GET    /sequence_types/new(.:format)                          {:action=>"new", :controller=>"sequence_types"}
+                    edit_sequence_type GET    /sequence_types/:id/edit(.:format)                     {:action=>"edit", :controller=>"sequence_types"}
+                         sequence_type GET    /sequence_types/:id(.:format)                          {:action=>"show", :controller=>"sequence_types"}
+                                       PUT    /sequence_types/:id(.:format)                          {:action=>"update", :controller=>"sequence_types"}
+                                       DELETE /sequence_types/:id(.:format)                          {:action=>"destroy", :controller=>"sequence_types"}
+    show_search_initial_scan_qualities GET    /initial_scan_qualities/show_search(.:format)          {:action=>"show_search", :controller=>"initial_scan_qualities"}
+   render_field_initial_scan_qualities GET    /initial_scan_qualities/render_field(.:format)         {:action=>"render_field", :controller=>"initial_scan_qualities"}
+              row_initial_scan_quality GET    /initial_scan_qualities/:id/row(.:format)              {:action=>"row", :controller=>"initial_scan_qualities"}
+    update_column_initial_scan_quality POST   /initial_scan_qualities/:id/update_column(.:format)    {:action=>"update_column", :controller=>"initial_scan_qualities"}
+     render_field_initial_scan_quality GET    /initial_scan_qualities/:id/render_field(.:format)     {:action=>"render_field", :controller=>"initial_scan_qualities"}
+edit_associated_initial_scan_qualities GET    /initial_scan_qualities/edit_associated(.:format)      {:action=>"edit_associated", :controller=>"initial_scan_qualities"}
+   new_existing_initial_scan_qualities GET    /initial_scan_qualities/new_existing(.:format)         {:action=>"new_existing", :controller=>"initial_scan_qualities"}
+   add_existing_initial_scan_qualities POST   /initial_scan_qualities/add_existing(.:format)         {:action=>"add_existing", :controller=>"initial_scan_qualities"}
+  edit_associated_initial_scan_quality GET    /initial_scan_qualities/:id/edit_associated(.:format)  {:action=>"edit_associated", :controller=>"initial_scan_qualities"}
+  add_association_initial_scan_quality GET    /initial_scan_qualities/:id/add_association(.:format)  {:action=>"add_association", :controller=>"initial_scan_qualities"}
+ destroy_existing_initial_scan_quality DELETE /initial_scan_qualities/:id/destroy_existing(.:format) {:action=>"destroy_existing", :controller=>"initial_scan_qualities"}
+                initial_scan_qualities GET    /initial_scan_qualities(.:format)                      {:action=>"index", :controller=>"initial_scan_qualities"}
+                                       POST   /initial_scan_qualities(.:format)                      {:action=>"create", :controller=>"initial_scan_qualities"}
+              new_initial_scan_quality GET    /initial_scan_qualities/new(.:format)                  {:action=>"new", :controller=>"initial_scan_qualities"}
+             edit_initial_scan_quality GET    /initial_scan_qualities/:id/edit(.:format)             {:action=>"edit", :controller=>"initial_scan_qualities"}
+                  initial_scan_quality GET    /initial_scan_qualities/:id(.:format)                  {:action=>"show", :controller=>"initial_scan_qualities"}
+                                       PUT    /initial_scan_qualities/:id(.:format)                  {:action=>"update", :controller=>"initial_scan_qualities"}
+                                       DELETE /initial_scan_qualities/:id(.:format)                  {:action=>"destroy", :controller=>"initial_scan_qualities"}
+                 show_search_sequences GET    /sequences/show_search(.:format)                       {:action=>"show_search", :controller=>"sequences"}
+                render_field_sequences GET    /sequences/render_field(.:format)                      {:action=>"render_field", :controller=>"sequences"}
+                          row_sequence GET    /sequences/:id/row(.:format)                           {:action=>"row", :controller=>"sequences"}
+                update_column_sequence POST   /sequences/:id/update_column(.:format)                 {:action=>"update_column", :controller=>"sequences"}
+                 render_field_sequence GET    /sequences/:id/render_field(.:format)                  {:action=>"render_field", :controller=>"sequences"}
+             edit_associated_sequences GET    /sequences/edit_associated(.:format)                   {:action=>"edit_associated", :controller=>"sequences"}
+                new_existing_sequences GET    /sequences/new_existing(.:format)                      {:action=>"new_existing", :controller=>"sequences"}
+                add_existing_sequences POST   /sequences/add_existing(.:format)                      {:action=>"add_existing", :controller=>"sequences"}
+              edit_associated_sequence GET    /sequences/:id/edit_associated(.:format)               {:action=>"edit_associated", :controller=>"sequences"}
+              add_association_sequence GET    /sequences/:id/add_association(.:format)               {:action=>"add_association", :controller=>"sequences"}
+             destroy_existing_sequence DELETE /sequences/:id/destroy_existing(.:format)              {:action=>"destroy_existing", :controller=>"sequences"}
+                             sequences GET    /sequences(.:format)                                   {:action=>"index", :controller=>"sequences"}
+                                       POST   /sequences(.:format)                                   {:action=>"create", :controller=>"sequences"}
+                          new_sequence GET    /sequences/new(.:format)                               {:action=>"new", :controller=>"sequences"}
+                         edit_sequence GET    /sequences/:id/edit(.:format)                          {:action=>"edit", :controller=>"sequences"}
+                              sequence GET    /sequences/:id(.:format)                               {:action=>"show", :controller=>"sequences"}
+                                       PUT    /sequences/:id(.:format)                               {:action=>"update", :controller=>"sequences"}
+                                       DELETE /sequences/:id(.:format)                               {:action=>"destroy", :controller=>"sequences"}
+                     show_search_users GET    /users/show_search(.:format)                           {:action=>"show_search", :controller=>"users"}
+                    render_field_users GET    /users/render_field(.:format)                          {:action=>"render_field", :controller=>"users"}
+                              row_user GET    /users/:id/row(.:format)                               {:action=>"row", :controller=>"users"}
+                    update_column_user POST   /users/:id/update_column(.:format)                     {:action=>"update_column", :controller=>"users"}
+                     render_field_user GET    /users/:id/render_field(.:format)                      {:action=>"render_field", :controller=>"users"}
+                 edit_associated_users GET    /users/edit_associated(.:format)                       {:action=>"edit_associated", :controller=>"users"}
+                    new_existing_users GET    /users/new_existing(.:format)                          {:action=>"new_existing", :controller=>"users"}
+                    add_existing_users POST   /users/add_existing(.:format)                          {:action=>"add_existing", :controller=>"users"}
+                  edit_associated_user GET    /users/:id/edit_associated(.:format)                   {:action=>"edit_associated", :controller=>"users"}
+                  add_association_user GET    /users/:id/add_association(.:format)                   {:action=>"add_association", :controller=>"users"}
+                 destroy_existing_user DELETE /users/:id/destroy_existing(.:format)                  {:action=>"destroy_existing", :controller=>"users"}
+                                 users GET    /users(.:format)                                       {:action=>"index", :controller=>"users"}
+                                       POST   /users(.:format)                                       {:action=>"create", :controller=>"users"}
+                              new_user GET    /users/new(.:format)                                   {:action=>"new", :controller=>"users"}
+                             edit_user GET    /users/:id/edit(.:format)                              {:action=>"edit", :controller=>"users"}
+                                  user GET    /users/:id(.:format)                                   {:action=>"show", :controller=>"users"}
+                                       PUT    /users/:id(.:format)                                   {:action=>"update", :controller=>"users"}
+                                       DELETE /users/:id(.:format)                                   {:action=>"destroy", :controller=>"users"}
+               show_search_enrollments GET    /enrollments/show_search(.:format)                     {:action=>"show_search", :controller=>"enrollments"}
+              render_field_enrollments GET    /enrollments/render_field(.:format)                    {:action=>"render_field", :controller=>"enrollments"}
+                        row_enrollment GET    /enrollments/:id/row(.:format)                         {:action=>"row", :controller=>"enrollments"}
+              update_column_enrollment POST   /enrollments/:id/update_column(.:format)               {:action=>"update_column", :controller=>"enrollments"}
+               render_field_enrollment GET    /enrollments/:id/render_field(.:format)                {:action=>"render_field", :controller=>"enrollments"}
+           edit_associated_enrollments GET    /enrollments/edit_associated(.:format)                 {:action=>"edit_associated", :controller=>"enrollments"}
+              new_existing_enrollments GET    /enrollments/new_existing(.:format)                    {:action=>"new_existing", :controller=>"enrollments"}
+              add_existing_enrollments POST   /enrollments/add_existing(.:format)                    {:action=>"add_existing", :controller=>"enrollments"}
+            edit_associated_enrollment GET    /enrollments/:id/edit_associated(.:format)             {:action=>"edit_associated", :controller=>"enrollments"}
+            add_association_enrollment GET    /enrollments/:id/add_association(.:format)             {:action=>"add_association", :controller=>"enrollments"}
+           destroy_existing_enrollment DELETE /enrollments/:id/destroy_existing(.:format)            {:action=>"destroy_existing", :controller=>"enrollments"}
+                           enrollments GET    /enrollments(.:format)                                 {:action=>"index", :controller=>"enrollments"}
+                                       POST   /enrollments(.:format)                                 {:action=>"create", :controller=>"enrollments"}
+                        new_enrollment GET    /enrollments/new(.:format)                             {:action=>"new", :controller=>"enrollments"}
+                       edit_enrollment GET    /enrollments/:id/edit(.:format)                        {:action=>"edit", :controller=>"enrollments"}
+                            enrollment GET    /enrollments/:id(.:format)                             {:action=>"show", :controller=>"enrollments"}
+                                       PUT    /enrollments/:id(.:format)                             {:action=>"update", :controller=>"enrollments"}
+                                       DELETE /enrollments/:id(.:format)                             {:action=>"destroy", :controller=>"enrollments"}
+                   show_search_studies GET    /studies/show_search(.:format)                         {:action=>"show_search", :controller=>"studies"}
+                  render_field_studies GET    /studies/render_field(.:format)                        {:action=>"render_field", :controller=>"studies"}
+                             row_study GET    /studies/:id/row(.:format)                             {:action=>"row", :controller=>"studies"}
+                   update_column_study POST   /studies/:id/update_column(.:format)                   {:action=>"update_column", :controller=>"studies"}
+                    render_field_study GET    /studies/:id/render_field(.:format)                    {:action=>"render_field", :controller=>"studies"}
+               edit_associated_studies GET    /studies/edit_associated(.:format)                     {:action=>"edit_associated", :controller=>"studies"}
+                  new_existing_studies GET    /studies/new_existing(.:format)                        {:action=>"new_existing", :controller=>"studies"}
+                  add_existing_studies POST   /studies/add_existing(.:format)                        {:action=>"add_existing", :controller=>"studies"}
+                 edit_associated_study GET    /studies/:id/edit_associated(.:format)                 {:action=>"edit_associated", :controller=>"studies"}
+                 add_association_study GET    /studies/:id/add_association(.:format)                 {:action=>"add_association", :controller=>"studies"}
+                destroy_existing_study DELETE /studies/:id/destroy_existing(.:format)                {:action=>"destroy_existing", :controller=>"studies"}
+                               studies GET    /studies(.:format)                                     {:action=>"index", :controller=>"studies"}
+                                       POST   /studies(.:format)                                     {:action=>"create", :controller=>"studies"}
+                             new_study GET    /studies/new(.:format)                                 {:action=>"new", :controller=>"studies"}
+                            edit_study GET    /studies/:id/edit(.:format)                            {:action=>"edit", :controller=>"studies"}
+                                 study GET    /studies/:id(.:format)                                 {:action=>"show", :controller=>"studies"}
+                                       PUT    /studies/:id(.:format)                                 {:action=>"update", :controller=>"studies"}
+                                       DELETE /studies/:id(.:format)                                 {:action=>"destroy", :controller=>"studies"}
+           show_search_upcoming_events GET    /upcoming_events/show_search(.:format)                 {:action=>"show_search", :controller=>"upcoming_events"}
+          render_field_upcoming_events GET    /upcoming_events/render_field(.:format)                {:action=>"render_field", :controller=>"upcoming_events"}
+                    row_upcoming_event GET    /upcoming_events/:id/row(.:format)                     {:action=>"row", :controller=>"upcoming_events"}
+          update_column_upcoming_event POST   /upcoming_events/:id/update_column(.:format)           {:action=>"update_column", :controller=>"upcoming_events"}
+           render_field_upcoming_event GET    /upcoming_events/:id/render_field(.:format)            {:action=>"render_field", :controller=>"upcoming_events"}
+       edit_associated_upcoming_events GET    /upcoming_events/edit_associated(.:format)             {:action=>"edit_associated", :controller=>"upcoming_events"}
+          new_existing_upcoming_events GET    /upcoming_events/new_existing(.:format)                {:action=>"new_existing", :controller=>"upcoming_events"}
+          add_existing_upcoming_events POST   /upcoming_events/add_existing(.:format)                {:action=>"add_existing", :controller=>"upcoming_events"}
+        edit_associated_upcoming_event GET    /upcoming_events/:id/edit_associated(.:format)         {:action=>"edit_associated", :controller=>"upcoming_events"}
+        add_association_upcoming_event GET    /upcoming_events/:id/add_association(.:format)         {:action=>"add_association", :controller=>"upcoming_events"}
+       destroy_existing_upcoming_event DELETE /upcoming_events/:id/destroy_existing(.:format)        {:action=>"destroy_existing", :controller=>"upcoming_events"}
+                       upcoming_events GET    /upcoming_events(.:format)                             {:action=>"index", :controller=>"upcoming_events"}
+                                       POST   /upcoming_events(.:format)                             {:action=>"create", :controller=>"upcoming_events"}
+                    new_upcoming_event GET    /upcoming_events/new(.:format)                         {:action=>"new", :controller=>"upcoming_events"}
+                   edit_upcoming_event GET    /upcoming_events/:id/edit(.:format)                    {:action=>"edit", :controller=>"upcoming_events"}
+                        upcoming_event GET    /upcoming_events/:id(.:format)                         {:action=>"show", :controller=>"upcoming_events"}
+                                       PUT    /upcoming_events/:id(.:format)                         {:action=>"update", :controller=>"upcoming_events"}
+                                       DELETE /upcoming_events/:id(.:format)                         {:action=>"destroy", :controller=>"upcoming_events"}
+        show_search_potential_subjects GET    /potential_subjects/show_search(.:format)              {:action=>"show_search", :controller=>"potential_subjects"}
+       render_field_potential_subjects GET    /potential_subjects/render_field(.:format)             {:action=>"render_field", :controller=>"potential_subjects"}
+                 row_potential_subject GET    /potential_subjects/:id/row(.:format)                  {:action=>"row", :controller=>"potential_subjects"}
+       update_column_potential_subject POST   /potential_subjects/:id/update_column(.:format)        {:action=>"update_column", :controller=>"potential_subjects"}
+        render_field_potential_subject GET    /potential_subjects/:id/render_field(.:format)         {:action=>"render_field", :controller=>"potential_subjects"}
+    edit_associated_potential_subjects GET    /potential_subjects/edit_associated(.:format)          {:action=>"edit_associated", :controller=>"potential_subjects"}
+       new_existing_potential_subjects GET    /potential_subjects/new_existing(.:format)             {:action=>"new_existing", :controller=>"potential_subjects"}
+       add_existing_potential_subjects POST   /potential_subjects/add_existing(.:format)             {:action=>"add_existing", :controller=>"potential_subjects"}
+     edit_associated_potential_subject GET    /potential_subjects/:id/edit_associated(.:format)      {:action=>"edit_associated", :controller=>"potential_subjects"}
+     add_association_potential_subject GET    /potential_subjects/:id/add_association(.:format)      {:action=>"add_association", :controller=>"potential_subjects"}
+    destroy_existing_potential_subject DELETE /potential_subjects/:id/destroy_existing(.:format)     {:action=>"destroy_existing", :controller=>"potential_subjects"}
+                    potential_subjects GET    /potential_subjects(.:format)                          {:action=>"index", :controller=>"potential_subjects"}
+                                       POST   /potential_subjects(.:format)                          {:action=>"create", :controller=>"potential_subjects"}
+                 new_potential_subject GET    /potential_subjects/new(.:format)                      {:action=>"new", :controller=>"potential_subjects"}
+                edit_potential_subject GET    /potential_subjects/:id/edit(.:format)                 {:action=>"edit", :controller=>"potential_subjects"}
+                     potential_subject GET    /potential_subjects/:id(.:format)                      {:action=>"show", :controller=>"potential_subjects"}
+                                       PUT    /potential_subjects/:id(.:format)                      {:action=>"update", :controller=>"potential_subjects"}
+                                       DELETE /potential_subjects/:id(.:format)                      {:action=>"destroy", :controller=>"potential_subjects"}
+                       show_search_t1s GET    /t1s/show_search(.:format)                             {:action=>"show_search", :controller=>"t1s"}
+                      render_field_t1s GET    /t1s/render_field(.:format)                            {:action=>"render_field", :controller=>"t1s"}
+                                row_t1 GET    /t1s/:id/row(.:format)                                 {:action=>"row", :controller=>"t1s"}
+                      update_column_t1 POST   /t1s/:id/update_column(.:format)                       {:action=>"update_column", :controller=>"t1s"}
+                       render_field_t1 GET    /t1s/:id/render_field(.:format)                        {:action=>"render_field", :controller=>"t1s"}
+                   edit_associated_t1s GET    /t1s/edit_associated(.:format)                         {:action=>"edit_associated", :controller=>"t1s"}
+                      new_existing_t1s GET    /t1s/new_existing(.:format)                            {:action=>"new_existing", :controller=>"t1s"}
+                      add_existing_t1s POST   /t1s/add_existing(.:format)                            {:action=>"add_existing", :controller=>"t1s"}
+                    edit_associated_t1 GET    /t1s/:id/edit_associated(.:format)                     {:action=>"edit_associated", :controller=>"t1s"}
+                    add_association_t1 GET    /t1s/:id/add_association(.:format)                     {:action=>"add_association", :controller=>"t1s"}
+                   destroy_existing_t1 DELETE /t1s/:id/destroy_existing(.:format)                    {:action=>"destroy_existing", :controller=>"t1s"}
+                                   t1s GET    /t1s(.:format)                                         {:action=>"index", :controller=>"t1s"}
+                                       POST   /t1s(.:format)                                         {:action=>"create", :controller=>"t1s"}
+                                new_t1 GET    /t1s/new(.:format)                                     {:action=>"new", :controller=>"t1s"}
+                               edit_t1 GET    /t1s/:id/edit(.:format)                                {:action=>"edit", :controller=>"t1s"}
+                                    t1 GET    /t1s/:id(.:format)                                     {:action=>"show", :controller=>"t1s"}
+                                       PUT    /t1s/:id(.:format)                                     {:action=>"update", :controller=>"t1s"}
+                                       DELETE /t1s/:id(.:format)                                     {:action=>"destroy", :controller=>"t1s"}
+                 report_complete_scans GET    /reports/:report_id/complete_scans(.:format)           {:action=>"index", :controller=>"complete_scans"}
+                                       POST   /reports/:report_id/complete_scans(.:format)           {:action=>"create", :controller=>"complete_scans"}
+              new_report_complete_scan GET    /reports/:report_id/complete_scans/new(.:format)       {:action=>"new", :controller=>"complete_scans"}
+             edit_report_complete_scan GET    /reports/:report_id/complete_scans/:id/edit(.:format)  {:action=>"edit", :controller=>"complete_scans"}
+                  report_complete_scan GET    /reports/:report_id/complete_scans/:id(.:format)       {:action=>"show", :controller=>"complete_scans"}
+                                       PUT    /reports/:report_id/complete_scans/:id(.:format)       {:action=>"update", :controller=>"complete_scans"}
+                                       DELETE /reports/:report_id/complete_scans/:id(.:format)       {:action=>"destroy", :controller=>"complete_scans"}
+                  report_missing_scans GET    /reports/:report_id/missing_scans(.:format)            {:action=>"index", :controller=>"missing_scans"}
+                                       POST   /reports/:report_id/missing_scans(.:format)            {:action=>"create", :controller=>"missing_scans"}
+               new_report_missing_scan GET    /reports/:report_id/missing_scans/new(.:format)        {:action=>"new", :controller=>"missing_scans"}
+              edit_report_missing_scan GET    /reports/:report_id/missing_scans/:id/edit(.:format)   {:action=>"edit", :controller=>"missing_scans"}
+                   report_missing_scan GET    /reports/:report_id/missing_scans/:id(.:format)        {:action=>"show", :controller=>"missing_scans"}
+                                       PUT    /reports/:report_id/missing_scans/:id(.:format)        {:action=>"update", :controller=>"missing_scans"}
+                                       DELETE /reports/:report_id/missing_scans/:id(.:format)        {:action=>"destroy", :controller=>"missing_scans"}
+                               reports GET    /reports(.:format)                                     {:action=>"index", :controller=>"reports"}
+                                       POST   /reports(.:format)                                     {:action=>"create", :controller=>"reports"}
+                            new_report GET    /reports/new(.:format)                                 {:action=>"new", :controller=>"reports"}
+                           edit_report GET    /reports/:id/edit(.:format)                            {:action=>"edit", :controller=>"reports"}
+                                report GET    /reports/:id(.:format)                                 {:action=>"show", :controller=>"reports"}
+                                       PUT    /reports/:id(.:format)                                 {:action=>"update", :controller=>"reports"}
+                                       DELETE /reports/:id(.:format)                                 {:action=>"destroy", :controller=>"reports"}
+               show_search_admin_index GET    /admin/show_search(.:format)                           {:action=>"show_search", :controller=>"admin"}
+              render_field_admin_index GET    /admin/render_field(.:format)                          {:action=>"render_field", :controller=>"admin"}
+                             row_admin GET    /admin/:id/row(.:format)                               {:action=>"row", :controller=>"admin"}
+                   update_column_admin POST   /admin/:id/update_column(.:format)                     {:action=>"update_column", :controller=>"admin"}
+                    render_field_admin GET    /admin/:id/render_field(.:format)                      {:action=>"render_field", :controller=>"admin"}
+           edit_associated_admin_index GET    /admin/edit_associated(.:format)                       {:action=>"edit_associated", :controller=>"admin"}
+              new_existing_admin_index GET    /admin/new_existing(.:format)                          {:action=>"new_existing", :controller=>"admin"}
+              add_existing_admin_index POST   /admin/add_existing(.:format)                          {:action=>"add_existing", :controller=>"admin"}
+                 edit_associated_admin GET    /admin/:id/edit_associated(.:format)                   {:action=>"edit_associated", :controller=>"admin"}
+                 add_association_admin GET    /admin/:id/add_association(.:format)                   {:action=>"add_association", :controller=>"admin"}
+                destroy_existing_admin DELETE /admin/:id/destroy_existing(.:format)                  {:action=>"destroy_existing", :controller=>"admin"}
+                           admin_index GET    /admin(.:format)                                       {:action=>"index", :controller=>"admin"}
+                                       POST   /admin(.:format)                                       {:action=>"create", :controller=>"admin"}
+                             new_admin GET    /admin/new(.:format)                                   {:action=>"new", :controller=>"admin"}
+                            edit_admin GET    /admin/:id/edit(.:format)                              {:action=>"edit", :controller=>"admin"}
+                                 admin GET    /admin/:id(.:format)                                   {:action=>"show", :controller=>"admin"}
+                                       PUT    /admin/:id(.:format)                                   {:action=>"update", :controller=>"admin"}
+                                       DELETE /admin/:id(.:format)                                   {:action=>"destroy", :controller=>"admin"}
+                  show_search_subjects GET    /subjects/show_search(.:format)                        {:action=>"show_search", :controller=>"subjects"}
+                 render_field_subjects GET    /subjects/render_field(.:format)                       {:action=>"render_field", :controller=>"subjects"}
+                           row_subject GET    /subjects/:id/row(.:format)                            {:action=>"row", :controller=>"subjects"}
+                 update_column_subject POST   /subjects/:id/update_column(.:format)                  {:action=>"update_column", :controller=>"subjects"}
+                  render_field_subject GET    /subjects/:id/render_field(.:format)                   {:action=>"render_field", :controller=>"subjects"}
+              edit_associated_subjects GET    /subjects/edit_associated(.:format)                    {:action=>"edit_associated", :controller=>"subjects"}
+                 new_existing_subjects GET    /subjects/new_existing(.:format)                       {:action=>"new_existing", :controller=>"subjects"}
+                 add_existing_subjects POST   /subjects/add_existing(.:format)                       {:action=>"add_existing", :controller=>"subjects"}
+               edit_associated_subject GET    /subjects/:id/edit_associated(.:format)                {:action=>"edit_associated", :controller=>"subjects"}
+               add_association_subject GET    /subjects/:id/add_association(.:format)                {:action=>"add_association", :controller=>"subjects"}
+              destroy_existing_subject DELETE /subjects/:id/destroy_existing(.:format)               {:action=>"destroy_existing", :controller=>"subjects"}
+                              subjects GET    /subjects(.:format)                                    {:action=>"index", :controller=>"subjects"}
+                                       POST   /subjects(.:format)                                    {:action=>"create", :controller=>"subjects"}
+                           new_subject GET    /subjects/new(.:format)                                {:action=>"new", :controller=>"subjects"}
+                          edit_subject GET    /subjects/:id/edit(.:format)                           {:action=>"edit", :controller=>"subjects"}
+                               subject GET    /subjects/:id(.:format)                                {:action=>"show", :controller=>"subjects"}
+                                       PUT    /subjects/:id(.:format)                                {:action=>"update", :controller=>"subjects"}
+                                       DELETE /subjects/:id(.:format)                                {:action=>"destroy", :controller=>"subjects"}
+                                  root        /                                                      {:controller=>"upcoming_events", :action=>"index"}
+                                              /:controller(/:action(/:id(.:format)))                 

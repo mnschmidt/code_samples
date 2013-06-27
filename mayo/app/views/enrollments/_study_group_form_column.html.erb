@@ -1,0 +1,8 @@
+<dl>
+	<dt>
+		<label for="record_study_group">Study group</label>
+	</dt>
+	<dd>
+		<%= select("record", "study_group", StudyGroup.all.collect {|g| [g.name, g.id ] }, {:include_blank => true }) %>
+	</dd>
+</dl>

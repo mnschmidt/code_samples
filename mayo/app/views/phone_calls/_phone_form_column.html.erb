@@ -1,0 +1,11 @@
+<% scope ||= nil %>
+<dl>
+	<dt>
+		<label for="<%= "record_#{column.name}" %>"><%= column.label %></label>
+	</dt>
+	<dd>
+		<%= form_column column, scope %>&nbsp;&nbsp;
+		<em>phone</em> <strong><%= @record.subject.phone %></strong>&nbsp;&nbsp;
+		<em>mobile</em> <strong><%= @record.subject.mobile %></strong>
+	</dd>
+</dl>

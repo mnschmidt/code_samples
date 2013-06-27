@@ -1,0 +1,2 @@
+module NijmegenSchedulingsHelper
+end

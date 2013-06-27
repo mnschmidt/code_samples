@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  event_id: 1
+  sequence_id: 1
+  rating: 1
+  rater: 1
+  note: MyText
+  created_by: MyString
+  updated_by: MyString
+  lock_version: 1
+
+two:
+  event_id: 1
+  sequence_id: 1
+  rating: 1
+  rater: 1
+  note: MyText
+  created_by: MyString
+  updated_by: MyString
+  lock_version: 1
